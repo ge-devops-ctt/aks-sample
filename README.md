@@ -129,10 +129,25 @@ az vm create \
     --no-wait
 ```
 
-az aks get-credentials --resource-group aks-rg --name aks-cluster
-
 az group delete -n $RG --no-wait
 
+## Connect to the cluster
+
+```bash
+az aks get-credentials --resource-group $RG --name $AKS
+```
+
+## Install the CodeFresh Runner
+
+- Check the [Codefresh documentation](https://codefresh.io/docs/docs/administration/codefresh-runner/)
+- Install the [Codefresh CLI](https://codefresh-io.github.io/cli/installation/download/)
+- Create a [Codefresh API key](https://g.codefresh.io/user/settings)
+
+```bash
+API_KEY="602ba948ab07033e079b8fc5.f23f44c7c20fccc7ef1ad73174558c9e"
+codefresh auth create-context --api-key ${API_KEY}
+codefresh runner init --insecure
+```
 ## Create a private load balancer
 
 ```bash
