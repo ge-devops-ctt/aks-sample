@@ -2,3 +2,4 @@
 *.azcli
 codefresh_manifests
 *.log
+.env

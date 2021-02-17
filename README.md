@@ -144,7 +144,7 @@ az aks get-credentials --resource-group $RG --name $AKS
 - Create a [Codefresh API key](https://g.codefresh.io/user/settings)
 
 ```bash
-API_KEY="602ba948ab07033e079b8fc5.f23f44c7c20fccc7ef1ad73174558c9e"
+API_KEY=""
 codefresh auth create-context --api-key ${API_KEY}
 codefresh runner init --insecure
 ```
