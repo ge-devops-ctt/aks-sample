@@ -12,9 +12,6 @@ PIP=PIP-VNG-Azure-VNet
 VNG=VNG-Azure-VNet
 ```
 
-$RG="aks-rg"
-$VNG="VNG-Azure-VNet"
-
 ## Create network resources
 
 ### Create VNet and subnets
