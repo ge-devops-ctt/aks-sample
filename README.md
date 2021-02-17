@@ -177,7 +177,8 @@ kubectl delete -f ingress/
 ## Delete AKS
 
 ```bash
-az aks delete 
+az aks delete \
     --resource-group $RG \
-    --name $AKS
+    --name $AKS \
+    --no-wait
 ```
